@@ -1,0 +1,35 @@
+To install Lightbox2 plugin for Mango, simply copy the lightbox2 folder into the folder:
+
+MangoBlog/components/plugins/user
+
+Then log into your administrator, go into Add-ons, and Activate Lightbox2.
+
+Once active, Lightbox2 configures Mango's WYSIWYG post and page editor to allow
+advanced linking. To activate lightbox, create a link, and set the setting
+"Relationship page to target" (on the advanced tab) to "lightbox".
+
+
+Manual configuration:
+
+If for some reason the plugin will activate but the setup function won't run,
+(or if you don't have an advanced tab when creating a new link), simply edit one file:
+
+Edit line 16 of admin/editorSettings.cfm (for current version of Mango)
+Edit line 30 of admin/layout.cfm (for older versions of Mango)
+
+Change:
+	plugins : "table,...
+
+To:
+	plugins : "table,advlink,...
+
+
+** If you decide to de-activate Lightbox2 but the advanced link dialog does not go away,
+edit the above file but *remove* the "advlink" item from the plugins list.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If you appreciate this plugin, please consider a small purchase from my amazon wish list. :)
+
+--> http://is.gd/aS4q
